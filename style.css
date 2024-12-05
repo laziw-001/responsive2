@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #202C36;
+    color: white;
+}
+.container {
+    padding: 0 80px;
+    margin: 0 auto;
+}
+header{
+    background-color: #2B3844;
+    padding: 18px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+.header-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.input-parent {
+    background-color: #2B3844;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 45px 0;
+}
+input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+main {
+    padding-top: 70px;
+}
+
+.section-parent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: #2B3844;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+.card img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .input-parent {
+    width: 100%;
+    padding: 30px;
+  }
+}
+@media (max-width: 425px) {
+  .container {
+    padding: 0 30px;
+  }
+  .input-parent {
+    width: 100%;
+    padding: 30px;
+  }
+  .card {
+    width: 100%;
+  }
+  .header-parent {
+    font-size: 14px;
+  }
+}
